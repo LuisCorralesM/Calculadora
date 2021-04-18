@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="BODY">
+
+    <div class="personalizar">
+
+        <div class="contornno selectores">
+            <span>Color Contorno</span><br>
+            <select id="contorno" onchange="colorContorno()">
+                <option class="botones-color" value="0">Blanco</option>
+                <option class="botones-color" value="1">Azul Claro</option>
+                <option class="botones-color" value="2">Rojo</option>
+                <option class="botones-color" value="3">Negro</option>
+                <option class="botones-color" value="4">Morado</option>
+                <option class="botones-color" value="5">Azul Oscuro</option>
+            </select>
+        </div>
+
+        <div class="fondo-btns selectores">
+            <span>Color Botones</span><br>
+            <select id="botones" onchange="colorbtns()">
+                <option class="botones-color" value="0">Blanco</option>
+                <option class="botones-color" value="1">Azul Claro</option>
+                <option class="botones-color" value="2">Rojo</option>
+                <option class="botones-color" value="3">Negro</option>
+                <option class="botones-color" value="4">Morado</option>
+                <option class="botones-color" value="5">Azul Oscuro</option>
+            </select>    
+        </div>
+
+        <div class="letra-btns selectores">
+            <span>Color Letra</span><br>
+            <select id="letra" onchange="colorLetra()">
+                <option class="letra-color" value="3">Negro</option>
+                <option class="letra-color" value="1">Azul Claro</option>
+                <option class="letra-color" value="2">Rojo</option>
+                <option class="letra-color" value="0">Blanco</option>
+                <option class="letra-color" value="4">Morado</option>
+                <option class="letra-color" value="5">Azul Oscuro</option>
+            </select>    
+        </div>
+
+        <div class="fondo selectores">
+            <span>Color Fondo</span><br>
+            <select id="fondo" onchange="colorFondo()">
+                <option class="fondo-color" value="0">Blanco</option>
+                <option class="fondo-color" value="1">Azul Claro</option>
+                <option class="fondo-color" value="2">Rojo</option>
+                <option class="fondo-color" value="3">Negro</option>
+                <option class="fondo-color" value="4">Morado</option>
+                <option class="fondo-color" value="5">Azul Oscuro</option>
+            </select>    
+        </div>
+
+    </div>
+
+    <div class="content-body">
+        <div id="contenedor-fondo" class="content-calculator">
+
+            <div class="screen">
+                <input type="text" placeholder="0" disabled id="screen-result">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input class="btn-color" type="button" value="7" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input class="btn-color" type="button" value="8" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input class="btn-color" type="button" value="9" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input class="btn-color" type="button" value="+" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input class="btn-color" type="button" value="4" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input class="btn-color" type="button" value="5" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input class="btn-color" type="button" value="6" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input class="btn-color" type="button" value="-" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input class="btn-color" type="button" value="1" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input class="btn-color" type="button" value="2" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input class="btn-color" type="button" value="3" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input class="btn-color" type="button" value="*" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input class="btn-color" type="button" value="0" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input class="btn-color" type="button" value="/" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius btn-clean">
+                <input type="button" value="C" class="clean" onclick="clean()">
+            </div>
+            <div class="btn-cal btn-cal-radius btn-equal">
+                <input type="button" value="=" class="equal" onclick="calculate()">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
